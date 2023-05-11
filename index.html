@@ -1,318 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- App title -->
-  <title>Responsive Pure CSS Menu</title>
-
-  <!-- Link css file -->
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="assets/css/menu.css">  
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>JuststreamIt</title>
 </head>
 
 <body>
-
-  <!-- Navigation bar -->
-  <header class="header">
+  <nav>
     <!-- Logo -->
     <a href="index.html" class="logo">
       <img src="assets/images/logo.png" alt="JustStreamIt logo">
     </a>
-
-    <!-- Hamburger icon -->
-    <input class="side-menu" type="checkbox" id="side-menu" />
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-    <!-- Menu -->
-    <nav class="nav">
-      <ul class="menu">
-        <li><a href="#"><i class="fa fa-home"></i> Accueil</a></li>
-        <li class="subnav">
-          <a href="categories"><i class="fa fa-film"></i> Catégories</a>
-          <div class="subnav-content">
-            <a href="#">Action</a>
-            <a href="#">Policier</a>
-            <a href="#">Drame</a>
-            <a href="#">Western</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main content -->
-  <main>
-    <!--
-        "Meilleur film” : Cette zone affiche la photo du film qui a la meilleur note Imdb 
-        toutes catégories confondues, ainsi que son titre, un bouton et le résumé du film 
-        sous le bouton.
-        -->
-
-    <div class="bm-movie">
-      <!-- divide  the div in 2 parts
-             the right part: display details of the movie
-        -->
-      <div class="bm-details">
-        <h1 id="movie-title">Movie Title</h1>
-        <div class="movie-desc" id="movie-desc">Synopsis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-          molestias consequuntur, eveniet doloribus commodi dolores sunt ad, unde natus earum quibusdam cum alias
-          obcaecati numquam voluptatem saepe deleniti.</div>
-        <div class="movie-details">
-          <!-- set the result on 2 columns -->
-          <ul class="movie-details-col">
-            <li>
-              <span>Genre:</span>
-              <a>Crime</a>,&nbsp;
-              <a>Action</a>,&nbsp;
-              <a>Drame</a>,&nbsp;
-              <a>Mystère</a>
-            </li>
-            <li>
-              <span>Réalisateur:</span>
-              <a>Réalisateur Un</a>,&nbsp;
-              <a>Réalisateur Deux</a>
-            </li>
-            <li>
-              <span>Acteurs:</span>
-              <a>Acteur Un</a>,&nbsp;
-              <a>Acteur Deux</a>,&nbsp;
-              <a>Acteur Trois</a>
-            </li>
+    <div class="hamburger">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    <div class="nav_links">
+      <a href="#best-movie"><i class="fa fa-film"></i> Meilleur film</a>
+      <a href="#best-rated"><i class="fa fa-film"></i> Mieux notés</a>
+      <a href="#action-movies"><i class="fa fa-film"></i> Action</a>
+      <a href="#thriller-movies"><i class="fa fa-film"></i> Thriller</a>
+      <a href="#western-movies"><i class="fa fa-film"></i> Western</a>
+    </div>
+  </nav>
+<main>
+  <div class="modal" id="modal">
+    <div class="main-container">
+      <div class="container-left">
+        <img alt="movie img" src="assets/images/movie-08.jpg" id="modal-img">
+        <div class="buttons">
+          <button class="button"><i class="bi bi-play-fill"></i> Play</button>
+        </div>
+      </div>
+      <div class="container-right">  
+        <span class="close">&times;</span>
+        <h2 id="modal-title">title</h2>
+        <p id="modal-desc">description</p>
+        <div class="modal-list-detail">
+          <ul class="flist-col">
+            <li><span> Genre: </span><a>Action, Thriller</a></li>
+            <li><span> Réalisateurs: </span><a>director A, director B</a></li>
+            <li><span> Acteurs: </span><a>actor A, actor B</a></li>
+            <li><span> Année: </span><a>2020</a>
+                 <span> Durée : </span><a> 180 Min. </a>
+                 <span> Imdb score: </span><a>185 </a></li>
           </ul>
-
-          <ul class="movie-details-col">
-            <li>
-              <span>Date de sortie:</span>
-              <a>2021</a>
-            </li>
-            <li>
-              <span>Note:</span>
-              <a>1500</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- display the movie img -->
-      <div class="bm-poster">
-        <img src="assets/images/movie-01.jpg" alt="Movie Title">
-        <div class="myButton">
-          <i class="fa fa-youtube-play"></i> Play
-        </div>
+        </div>  
+        
       </div>
     </div>
-    <!--
-        “Films les mieux notés” : Cette zone affiche les 7 autres films les mieux notés toutes 
-        catégories confondues. On pourra les faire défiler avec une flèche à gauche et à droite 
-        comme sur la maquette pour tous les parcourir.
-    -->
-    <div class="slide-container">
-      <div class="category">
-        <h2>Best Rated</h2>
-      </div>
-      <div class="slide">
-        <div class="slide-item">
-          <img src="assets/images/movie-01.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-02.jpg" alt="Image 2">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-03.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-04.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-05.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-06.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-07.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-08.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-09.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-10.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-11.jpg" alt="Image 1">
-        </div>
+  </div>
 
-      </div>
-      <!-- Div pour les boutons de navigation -->
-      <div class="slide-nav">
-        <!-- Bouton précédent -->
-        <img src="assets/images/chevron.png" id="nav-right">
-        <!-- Bouton suivant -->
-        <img src="assets/images/chevron.png" id="nav-left">
-      </div>
-    </div>
-   
-    <!-- 
-      Action : Montre les 7 films les mieux notés de la catégorie Action.
-    -->
-    <div class="slide-container">
-      <div class="category">
-        <h2>Action</h2>
-      </div>    
-      <div class="slide">
-        <div class="slide-item">
-          <img src="assets/images/movie-11.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-12.jpg" alt="Image 2">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-13.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-14.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-15.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-16.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-17.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-18.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-19.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-20.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-21.jpg" alt="Image 1">
-        </div>
-
-      </div>
-      <!-- Div pour les boutons de navigation -->
-      <div class="slide-nav">
-        <!-- Bouton précédent -->
-        <img src="assets/images/chevron.png" id="nav-right">
-        <!-- Bouton suivant -->
-        <img src="assets/images/chevron.png" id="nav-left">
-      </div>
-    </div>
-    <!--
-        Thriller : Montre les 7 films les mieux notés de la catégorie Thriller. 
-    -->
-    <div class="slide-container">
-      <div class="category">
-        <h2>Thriller</h2>
-      </div>    
-      <div class="slide">
-        <div class="slide-item">
-          <img src="assets/images/movie-23.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-24.jpg" alt="Image 2">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-25.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-26.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-27.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-28.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-29.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-30.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-31.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-32.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-33.jpg" alt="Image 1">
-        </div>
-
-      </div>
-      <!-- Div pour les boutons de navigation -->
-      <div class="slide-nav">
-        <!-- Bouton précédent -->
-        <img src="assets/images/chevron.png" id="nav-right">
-        <!-- Bouton suivant -->
-        <img src="assets/images/chevron.png" id="nav-left">
-      </div>
-    </div>
-    <!--
-        Drame : Montre les 7 films les mieux notés de la catégorie Drame. 
-    -->
-    <div class="slide-container">
-      <div class="category">
-        <h2>Drame</h2>
-      </div>    
-      <div class="slide">
-        <div class="slide-item">
-          <img src="assets/images/movie-01.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-25.jpg" alt="Image 2">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-30.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-10.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-15.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-18.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-28.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-36.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-34.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-32.jpg" alt="Image 1">
-        </div>
-        <div class="slide-item">
-          <img src="assets/images/movie-31.jpg" alt="Image 1">
-        </div>
-
-      </div>
-      <!-- Div pour les boutons de navigation -->
-      <div class="slide-nav">
-        <!-- Bouton précédent -->
-        <img src="assets/images/chevron.png" id="nav-right">
-        <!-- Bouton suivant -->
-        <img src="assets/images/chevron.png" id="nav-left">
-      </div>
-    </div>
-    <script src="assets/js/script.js"></script>
-</body>
+</main>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/script.js"></script>
+ </body>
 
 </html>
