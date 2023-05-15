@@ -1,0 +1,113 @@
+@import url("main.css");
+
+  
+section{
+  position:relative;
+  max-height: 385px;
+  margin-top: 10px;
+  border: 2px solid  var(--selected-color);
+  border-radius: 5px;   
+}
+
+.header {
+  height: 2rem;
+  padding:5px;
+  border-bottom: 2px solid var(--selected-color);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.left {
+  float: left;
+  max-width: 250px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.left .img{ 
+  border: 2px solid var(--selected-color);
+}
+.left .buttons{
+  display: flex;
+  
+}
+.left .buttons button{
+  color: var(--selected-color);
+  font-weight: bold;
+  width: 50%;
+}
+.right {
+  float: right;
+  max-width: calc(100% - 250px);
+  padding:5px;
+  box-sizing: border-box;
+
+}
+
+.wrapper {
+    position: relative;    
+    overflow: hidden;    
+    margin: 0 50px;
+  }
+
+.wrapper .slider {
+  display: flex;
+  
+  }
+
+  .wrapper .img {
+  width: 350px;
+  height: 280px;  
+  margin-right: 5px;
+
+  }
+
+.chevron {
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    background-color:var(--bg-color);
+    border-radius: 50%;
+  }
+
+#nav-right {
+  left: 0px;
+  transform: rotate(-90deg); 
+}
+#nav-left {
+  right: 0px;
+  transform: rotate(90deg);
+} 
+.chevron:hover {
+  background-color:var(--selected-color);
+ 
+}
+.clear {
+          clear: both;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;  
+  width: 600px;
+  overflow-x: auto;  
+  border: 3px solid var(--txt-color);
+  background-color: var(--bg-color);
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5rem;  
+  max-height: 70%;
+  overflow-y: auto;
+}
+.close {  
+  color: var(--txt-color);
+  float: right;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: var(--txt-color);
+  cursor: pointer;
+}
