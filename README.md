@@ -1,3 +1,4 @@
+<div style="background-color: rgb(50, 50, 50);">
 <p align="center">
   <img src="assets/images/logo.png" style="background-color:#2e3136">
 </p>
