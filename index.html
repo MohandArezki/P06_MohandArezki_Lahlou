@@ -8,23 +8,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <link rel="stylesheet" href="assets/css/main.css">  
-  <link rel="stylesheet" href="assets/css/menu.css">   
   <link rel="stylesheet" href="assets/css/style.css">
   <title>JuststreamIt</title>
 </head>
 
 <body>
+  <div class="loader-container"></div>
 
   <nav>
     <!-- Logo -->
     <a href="index.html" class="logo">
       <img src="assets/images/logo.png" alt="JustStreamIt logo">
     </a>
+    <!-- Hamburger menu -->
     <div class="hamburger">
       <div class="line line-1"></div>
       <div class="line line-2"></div>
       <div class="line line-3"></div>
     </div>
+    <!-- Navigation links -->
     <div class="nav_links">
       <a href="#sect-best-movie"><i class="fa fa-film"></i> Meilleur film</a>
       <a href="#sect-best-rated"><i class="fa fa-film"></i> Mieux notés</a>
@@ -32,40 +34,15 @@
       <a href="#sect-drama-movies"><i class="fa fa-film"></i> Drame</a>
       <a href="#sect-romance-movies"><i class="fa fa-film"></i> Romance</a>
     </div>
-  </nav>
-  
+  </nav> 
   <main>
-
     <div class="modal" id="modal">
-      <div class="container-left">
-        <img alt="movie img" src="" id="modal-img">
-        <div class="buttons">
-          <button class="button"><i class="bi bi-play-fill"></i> Play</button>
-        </div>
-      </div>
-      <div class="container-right">
-        <span class="close">&times;</span>
-        <h2 id="modal-title">title</h2>
-        <p id="modal-desc">description</p>
-        <div class="modal-list-detail">
-          <ul class="flist-col">
-            <li><span> Genre: </span><a>Action, Thriller</a></li>
-            <li><span> Réalisateurs: </span><a>director A, director B</a></li>
-            <li><span> Acteurs: </span><a>actor A, actor B</a></li>
-            <li><span> Année: </span><a>2020</a>
-              <span> Durée : </span><a> 180 Min. </a>
-              <span> Imdb score: </span><a>185 </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+    
   </main>
-  
-  <script src="assets/js/menu.js"></script>
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <!-- JavaScript script -->
   <script src="assets/js/script.js"></script>
   
-  </body>
+</body>
   
-  </html>
+</html>
