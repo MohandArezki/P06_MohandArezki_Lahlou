@@ -1,4 +1,6 @@
-![enter image description here](assets/images/logo.png)
+<p align="center">
+  <img src="assets/images/logo.png" style="background-color:#2e3136">
+</p>
 # A propos du projet
 *Projet 06: "Développez une interface utilisateur pour une application web Python"* réalisé dans le cadre de la formation  **Développeur d'application - Python**, Openclassrooms.
 *
