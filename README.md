@@ -1,4 +1,17 @@
-<div style="background-color: rgb(50, 50, 50);">
+<svg>
+  <foreignObject width="100%" height="100%">
+      <style>
+        .container {
+          display: flex;
+          width: 100%;
+          height: 300px;
+          background-color: black;
+          color: white;
+        }
+      </style>
+  </foreignObject>
+</svg>
+
 <p align="center">
   <img src="assets/images/logo.png" style="background-color:#2e3136">
 </p>
