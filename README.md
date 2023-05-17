@@ -2,8 +2,7 @@
   <img src="./assets/images/logo_black.png">
 </p>
 # A propos du projet
-*Projet 06: "Développez une interface utilisateur pour une application web Python"* réalisé dans le cadre de la formation  **Développeur d'application - Python**, Openclassrooms.
-*
+*Projet 06: "Développez une interface utilisateur pour une application web Python"* réalisé dans le cadre de la formation  **Développeur d'application - Python**, Openclassrooms.*
 
 # Objectifs
 
