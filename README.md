@@ -2,14 +2,12 @@
   <img src="./assets/images/logo_black.png">
 </p>
 
-# A propos du projet
-  **Projet 06:** "Développez une interface utilisateur pour une application web Python"
-  réalisé dans le cadre de la formation  **Développeur d'application - Python**, Openclassrooms.
+# Projet 06 : **Développez une interface utilisateur pour une application web Python**
+ Réalisé dans le cadre de la formation  **Développeur d'application - Python**, Openclassrooms.
 
 # Objectifs
-
 1- Récupérez les données de l'API REST [OCMovies](https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR). 
-2- Créer une page d'accueil, en utilisant  : HTML, CSS et Javascript vanilla.
+2- Créer une page d'accueil, en utilisant: HTML, CSS et Javascript vanilla.
 
 # Configuration
 
@@ -23,3 +21,4 @@
 Pour accéder à la page, ouvrez le fichier "index.html" dans n'importe quel navigateur Web.
 
 ---
+
