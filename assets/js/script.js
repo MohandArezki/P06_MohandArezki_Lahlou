@@ -121,7 +121,7 @@ async function openModal(url) {
   const overlay = document.getElementById('modal-overlay');
   const spanClose = document.getElementsByClassName("close")[0];
 
-  modal.style.display = "block";
+  modal.style.display = "flex";
   overlay.style.display = "block";
 
   spanClose.onclick = function () {

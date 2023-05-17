@@ -89,22 +89,17 @@ section{
 }
 
 #modal {
-  display: none;
   position: fixed;
-  width: 700px;
-  z-index: 1;  
-  border: 5px solid gray;
-  border-radius: 5px;
-  background-color: var(--bg-color);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.2);
-  padding: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  line-height: 1.5rem;  
-  max-height: 70%;
+  max-width: 98vw; /* 90% of viewport width */
+  max-height: calc(100vh - 120px); /* Maximum height is 100% of viewport height minus 100px */
   overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
 }
+
 
 #modal .close {  
   color: var(--txt-color);
