@@ -37,7 +37,7 @@ let categories = [
     url: baseUrl + "?sort_by=-votes,-imdb_score&genre=Romance",
     moviesList: []
   }
- 
+
 ];
 
 
@@ -250,6 +250,9 @@ function move(iCategory, sens) {
 
 async function fetchData(){
   try {
+    // Select the element with the id 'nav_links'
+    const navLinks = document.getElementById('nav_links'); 
+
     // Iterate over each category in the categories array
     for (const category of categories) {
       // Create an empty moviesList array and a count variable
@@ -289,8 +292,17 @@ async function fetchData(){
       category.moviesList = moviesList;
 
       // create menu for the category
-      const navLinks = document.getElementById('nav_links');
-      navLinks.innerHTML += `<a href="#${category.id}"><i class="fa fa-film"></i> ${category.name}</a>`;
+      // Create a new <a> element
+      const link = document.createElement('a');
+
+      // Set the href attribute of the <a> element
+      link.href = `#${category.id}`;
+
+      // Set the innerHTML of the <a> element
+      link.innerHTML = `<i class="fa fa-film"></i> ${category.name}`;
+
+      // Append the <a> element to the navLinks element
+      navLinks.appendChild(link);
     }
   } catch (error) {
     // Log any errors that occur during the fetching process
