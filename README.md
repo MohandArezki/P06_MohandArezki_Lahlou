@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./ressources/logo_black.png">
+  <img src="./assets/images/logo_black.png">
 </p>
 
 # OpenClassrooms - Formation Développeur d'application - Python
@@ -23,3 +23,6 @@
 
 Pour accéder à la page, ouvrez le fichier "index.html" dans n'importe quel navigateur Web.
 
+---
+Aperçus
+![Aperçus de la page web](ressources/preview.png)
