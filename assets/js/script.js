@@ -1,28 +1,5 @@
-// Get the hamburger icon element
-const hamburger = document.querySelector(".hamburger");
-// Get the navigation links element
-const navLinks = document.querySelector(".nav_links");
-
-// Add a click event listener to the hamburger icon
-hamburger.addEventListener("click", () => {
-  // Toggle the "open" class on the navigation links element
-  navLinks.classList.toggle("open");
-  // Toggle the "active" class on the hamburger icon element
-  hamburger.classList.toggle("active");
-});
-
 const baseUrl = "http://localhost:8000/api/v1/titles/";
 
-// Get the preloader element
-const loaderContainer = document.querySelector('.loader-container');
-// To display the loading GIF 
-const displayLoading = () => {
-  loaderContainer.style.display = 'block';
-};
-// To hide the loading GIF
-const hideLoading = () => {
-  loaderContainer.style.display = 'none';
-};
 // Define an array of categories
 let categories = [
   {
@@ -62,6 +39,32 @@ let categories = [
   }
  
 ];
+
+
+// Get the hamburger icon element
+const hamburger = document.querySelector(".hamburger");
+// Get the navigation links element
+const navLinks = document.querySelector(".nav_links");
+
+// Add a click event listener to the hamburger icon
+hamburger.addEventListener("click", () => {
+  // Toggle the "open" class on the navigation links element
+  navLinks.classList.toggle("open");
+  // Toggle the "active" class on the hamburger icon element
+  hamburger.classList.toggle("active");
+});
+
+
+// Get the preloader element
+const loaderContainer = document.querySelector('.loader-container');
+// To display the loading GIF 
+const displayLoading = () => {
+  loaderContainer.style.display = 'block';
+};
+// To hide the loading GIF
+const hideLoading = () => {
+  loaderContainer.style.display = 'none';
+};
 
 // Attach an event listener to the 'load' event of the window
 window.addEventListener('load', () => {
@@ -284,6 +287,10 @@ async function fetchData(){
 
       // Update the moviesList property of the current category with the fetched movie data
       category.moviesList = moviesList;
+
+      // create menu for the category
+      const navLinks = document.getElementById('nav_links');
+      navLinks.innerHTML += `<a href="#${category.id}"><i class="fa fa-film"></i> ${category.name}</a>`;
     }
   } catch (error) {
     // Log any errors that occur during the fetching process
