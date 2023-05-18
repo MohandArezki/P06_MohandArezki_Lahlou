@@ -4,11 +4,8 @@
 </p>
 
 # OpenClassrooms - Formation Développeur d'application - Python
-## Développez une interface utilisateur pour une application web Python
-
 # Projet 06
-
- Réalisé dans le cadre de la formation  **Développeur d'application - Python**, Openclassrooms.
+## Développez une interface utilisateur pour une application web Python
 
 ## Objectifs
 
