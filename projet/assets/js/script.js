@@ -17,10 +17,10 @@ let categories = [
     moviesList: []
   },
   {
-    id: "action-movies",
-    name: "Action",
+    id: "horror-movies",
+    name: "Horreur",
     nbreMovies: 7,
-    url: baseUrl + "?sort_by=-imdb_score&genre=Action",
+    url: baseUrl + "?sort_by=-imdb_score&genre=Horror",
     moviesList: []
   },
   {
