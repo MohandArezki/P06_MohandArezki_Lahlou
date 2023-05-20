@@ -20,21 +20,21 @@ let categories = [
     id: "action-movies",
     name: "Action",
     nbreMovies: 7,
-    url: baseUrl + "?sort_by=-votes,-imdb_score&genre=Action",
+    url: baseUrl + "?sort_by=-imdb_score&genre=Action",
     moviesList: []
   },
   {
     id: "drama-movies",
     name: "Drame",
     nbreMovies: 7,
-    url: baseUrl + "?sort_by=-votes,-imdb_score&genre=Drama",
+    url: baseUrl + "?sort_by=-imdb_score&genre=Drama",
     moviesList: []
   },
   {
     id: "romance-movies",
     name: "Romance",
     nbreMovies: 7,
-    url: baseUrl + "?sort_by=-votes,-imdb_score&genre=Romance",
+    url: baseUrl + "?sort_by=-imdb_score&genre=Romance",
     moviesList: []
   }
 
