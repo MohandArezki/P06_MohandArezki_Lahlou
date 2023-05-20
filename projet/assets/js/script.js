@@ -296,7 +296,7 @@ async function fetchData(){
       const link = document.createElement('a');
 
       // Set the href attribute of the <a> element
-      link.href = `#${category.id}`;
+      link.href = `#sect-${category.id}`;
 
       // Set the innerHTML of the <a> element
       link.innerHTML = `<i class="fa fa-film"></i> ${category.name}`;
