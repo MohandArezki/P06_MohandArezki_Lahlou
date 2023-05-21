@@ -17,7 +17,7 @@
  1. Clonez ou téléchargez les [API OCMovies](https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR).
  2. Reportez-vous à la [documentation](https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR#option-2-installation-and-execution-without-pipenv-using-venv-and-pip ) pour installer et démarrer le serveur localement.
  3. Clonez le projet :
-`git clone https://github.com/MohandArezki/OC_DevPython_P6.git`
+`git clone https://github.com/MohandArezki/P6_MohandArezki_Lahlou.git`
 
 # Usage
 
