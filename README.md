@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./assets/images/logo_black.png">
+  <img src="ressources/logo_black.png">
 </p>
 
 # OpenClassrooms - Formation Développeur d'application - Python
