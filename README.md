@@ -26,3 +26,8 @@ Pour accéder à la page, ouvrez le fichier "index.html" dans n'importe quel nav
 ---
 Aperçus
 ![Aperçus de la page web](ressources/preview.png)
+Validation du HTML
+![Validation_du_code_html](ressources/index_html.png)
+Validation du CSS
+![Validation_du_code_css1](ressources/main_css.png)
+![Validation_du_code_css2](ressources/style_css.png)
